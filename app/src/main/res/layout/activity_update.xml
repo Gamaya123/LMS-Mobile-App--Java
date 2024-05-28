@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Admin.UpdateActivity">
+
+    <!-- TextView for the title -->
+
+    <!-- Course Name Label and EditText -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="80dp"
+        android:text="Course Update and Delete"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/courseNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/courseNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Course Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <EditText
+        android:id="@+id/cid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Course Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/courseNameLabel" />
+
+    <!-- Course Fee Label and EditText -->
+    <TextView
+        android:id="@+id/courseFeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Fee:"
+        app:layout_constraintStart_toStartOf="@id/courseNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/cid" />
+
+    <EditText
+        android:id="@+id/courseFee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Course Fee"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/courseFeeLabel" />
+
+    <!-- Branches Label and EditText -->
+    <TextView
+        android:id="@+id/branchesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branches:"
+        app:layout_constraintStart_toStartOf="@id/courseFeeLabel"
+        app:layout_constraintTop_toBottomOf="@id/courseFee" />
+
+    <EditText
+        android:id="@+id/branches"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Branches"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/branchesLabel" />
+
+    <!-- Duration Label and EditText -->
+    <TextView
+        android:id="@+id/durationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration:"
+        app:layout_constraintStart_toStartOf="@id/branchesLabel"
+        app:layout_constraintTop_toBottomOf="@id/branches" />
+
+    <EditText
+        android:id="@+id/duration_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Duration"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durationLabel" />
+
+    <!-- Starting Date Label and EditText -->
+    <TextView
+        android:id="@+id/startingDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Date:"
+        app:layout_constraintStart_toStartOf="@id/durationLabel"
+        app:layout_constraintTop_toBottomOf="@id/duration_update" />
+
+    <EditText
+        android:id="@+id/startingDate_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Starting Date"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startingDateLabel" />
+
+    <!-- Published Date Label and EditText -->
+    <TextView
+        android:id="@+id/publishedDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Published Date:"
+        app:layout_constraintStart_toStartOf="@id/startingDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/startingDate_update" />
+
+    <EditText
+        android:id="@+id/publishedDate_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Published Date"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/publishedDateLabel" />
+
+    <!-- Registration Closing Date Label and EditText -->
+    <TextView
+        android:id="@+id/registrationClosingDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Closing Date:"
+        app:layout_constraintStart_toStartOf="@id/publishedDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/publishedDate_update" />
+
+    <EditText
+        android:id="@+id/registrationClosingDate_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Registration Closing Date"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrationClosingDateLabel" />
+
+    <!-- Maximum Student Count Label and EditText -->
+    <TextView
+        android:id="@+id/stcountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum Student Count:"
+        app:layout_constraintStart_toStartOf="@id/registrationClosingDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/registrationClosingDate_update" />
+
+    <EditText
+        android:id="@+id/stcountupdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Maximum Student Count"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stcountLabel"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Update Button -->
+
+    <!-- Delete Button -->
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:textColor="@color/sharpblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stcountupdate" />
+
+    <Button
+        android:id="@+id/delete_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="Delete"
+        android:textColor="@color/sharpblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stcountupdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

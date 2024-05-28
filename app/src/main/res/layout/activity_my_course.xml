@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.MyaccActivity">
+
+    <TextView
+        android:id="@+id/textCourseNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Course Name:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCourseName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Course Fee -->
+    <TextView
+        android:id="@+id/editTextCourseName"
+        android:layout_width="212dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Web Devolopment"
+        app:layout_constraintBottom_toTopOf="@+id/textCourseFeeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCourseNameLabel"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textCourseFeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="6dp"
+        android:text="Course Fee:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCourseFee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourseName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextCourseFee"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Rs.33000"
+        app:layout_constraintBottom_toTopOf="@+id/textBranchesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCourseFeeLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Branches -->
+    <TextView
+        android:id="@+id/textBranchesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branches:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBranches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourseFee"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/editTextBranches"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Colombo"
+        app:layout_constraintBottom_toTopOf="@+id/textDurationLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBranchesLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/textDurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBranches"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/editTextDuration"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="1 month"
+        app:layout_constraintBottom_toTopOf="@+id/textStartingOnLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDurationLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Starting On -->
+    <TextView
+        android:id="@+id/textStartingOnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting on:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStartingOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDuration"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/editTextStartingOn"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="2024/05/1"
+        app:layout_constraintBottom_toTopOf="@+id/textPublishedOnLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStartingOnLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Published On -->
+    <TextView
+        android:id="@+id/textPublishedOnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Published on:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPublishedOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStartingOn"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/editTextPublishedOn"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="2024/04/1"
+        app:layout_constraintBottom_toTopOf="@+id/textRegistrationClosingDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPublishedOnLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Registration Closing Date -->
+
+    <TextView
+        android:id="@+id/textRegistrationClosingDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration closing date:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRegistrationClosingDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPublishedOn"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/editTextRegistrationClosingDate"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="2024/04/20"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistrationClosingDateLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
